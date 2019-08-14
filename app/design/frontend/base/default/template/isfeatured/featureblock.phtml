@@ -38,7 +38,11 @@ $slide_navigation = $_item['horizontal_carousels_setting_slide_navigation'];
                                     <a href="<?php echo $this->getUrl($_product->getUrlPath()) ?>" ><?php echo $_product->getName(); ?>
                                     </a>                   
                                 </h3>
-                                <span class="price-con"><?php echo Mage_Catalog_Block_Product::getPriceHtml($_product, true) ?></span>
+                                <span class="price-con">
+								<?php									
+									echo Mage::helper('core')->currency($_product->getFinalPrice(),true,false);
+								?>
+								</span>
                                 <span class="fadd">
                                     <p>
                                         <button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation(' <?php echo $this->helper('checkout/cart')->getAddUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
