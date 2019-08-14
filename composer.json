@@ -3,10 +3,10 @@
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
-    "description": "Featured products with scroller extension allows you to set and show featured products, responsive design",
+    "description": "Featured products with scroller extension allows you to set and show featured products in frontend.",
     "authors": [
     {
-        "name": "MageHit",
+        "name": "MageHit.com",
         "email": "sale@magehit.com"
     }
 ],
