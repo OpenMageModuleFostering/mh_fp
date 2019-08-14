@@ -11,31 +11,23 @@
 			<action method="addCss">
                 <stylesheet>css/featured/owl.transitions.css</stylesheet>
             </action>
-        </reference>
-        <reference name="head">
+       
             <action method="addItem" ifconfig="isfeatured/genneral_setting/jqueryinclude">
                 <type>skin_js</type>
                 <name>js/featured/jquery-1.10.2.min.js</name>
                 <params/>
                 <if/>
             </action>
-        </reference>
-        <reference name="head">
-            <action method="addItem">
+			<action method="addItem">
                 <type>skin_js</type>
                 <name>js/featured/noconflict.js</name>
-                <params/>
-                <if/>
             </action>
-        </reference>
-        <reference name="head">
-            <action method="addItem">
+			<action method="addItem">
                 <type>skin_js</type>
                 <name>js/featured/owl.carousel.js</name>
-                <params/>
-                <if/>
             </action>
         </reference>
+        
 		<reference name="right">
             <block type="isfeatured/isfeatured" name="right.isfeatured" as="right_isfeatured" before="++" template="isfeatured/vertical_featureblock.phtml" />
         </reference>
