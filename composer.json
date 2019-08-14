@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/mh_fp",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Featured products with scroller extension allows you to set and show featured products, responsive design",
+    "authors": [
+    {
+        "name": "MageHit",
+        "email": "sale@magehit.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

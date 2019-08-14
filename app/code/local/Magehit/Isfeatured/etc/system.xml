@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <magehit translate="label" module="isfeatured">
+            <label>MAGE HIT</label>
+            <sort_order>0</sort_order>
+        </magehit>
+    </tabs>
+    <sections>
+        <isfeatured translate="label" module="isfeatured">
+            <tab>magehit</tab>
+            <label>Featured Product settings</label>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+				<genneral_setting>
+					<label>Genneral setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enable Feature Product Extension</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+						<jqueryinclude translate="label">
+                            <label>Include Jquery Library</label>
+                            <comment>Example:jquery-1.10.2.min.js(false for disable)</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </jqueryinclude>
+					</fields>
+				</genneral_setting>
+                <horizontal_carousels_setting translate="label">
+                    <label>Horizontal carousels setting (CMS page, static block)</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>11</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <title translate="label comment">
+                            <label>Title </label>
+                            <comment>Show your title here</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <product_no translate="label comment">
+                            <label>Set number of featured products to show on </label>
+                            <comment>Default: 20 (products).</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </product_no>
+						<slide_minslides translate="label comment">
+							<label>Min Slides</label>
+                            <comment>Default: 1. The minimum number of slides to be shown. Slides will be sized down if carousel becomes smaller than the original size.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_minslides>
+						<slide_maxslides translate="label comment">
+							<label>Max Slides</label>
+                            <comment>Default: 5. The maximum number of slides to be shown. Slides will be sized up if carousel becomes larger than the original size.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_maxslides>
+                        <slide_width translate="label comment">
+							<label>Slide Width</label>
+                            <comment>Default: 260 (px). The width of each slide.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_width>
+						<slide_margin translate="label comment">
+							<label>Slide Margin</label>
+                            <comment>Default: 10 (px). Margin between each slide.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_margin>
+						<slide_auto translate="label comment">
+                            <label>Slide Auto</label>
+							<comment>Default: Yes. Slides will automatically transition.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_auto>
+						<slide_pause translate="label comment">
+                            <label>Slide Pause</label>
+							<comment>Default: 4000 (ms). The amount of time (in ms) between each auto transition.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_pause>
+						<slide_autohover translate="label comment">
+                            <label>Slide Auto Hover</label>
+							<comment>Default: Yes. Auto show will pause when mouse hovers over slider.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_autohover>
+						<slide_speed translate="label comment">
+                            <label>Slide Speed</label>
+							<comment>Default: 500 (ms). Slide transition duration (in ms).</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_speed>
+						<slide_autocontrols translate="label comment">
+                            <label>Slide Auto Controls</label>
+							<comment>Default: Yes. If true, "Start" / "Stop" controls will be added.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_autocontrols>
+						
+                    </fields>
+                </horizontal_carousels_setting>
+				<vertical_carousels_setting translate="label">
+					<label>Vertical carousels setting (Left/Right sidebar)</label>
+					<frontend_type>text</frontend_type>
+                    <sort_order>12</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+					<fields>
+                        <title translate="label comment">
+                            <label>Title </label>
+                            <comment>Show your title here</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <product_no translate="label comment">
+                            <label>Set number of featured products to show on </label>
+                            <comment>Default: 10 (products).</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </product_no>
+						<slide_minslides translate="label comment">
+							<label>Min Slides</label>
+                            <comment>Default: 1. The minimum number of slides to be shown. Slides will be sized down if carousel becomes smaller than the original size.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_minslides>
+						<slide_maxslides translate="label comment">
+							<label>Max Slides</label>
+                            <comment>Default: 5. The maximum number of slides to be shown. Slides will be sized up if carousel becomes larger than the original size.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_maxslides>
+                        <slide_width translate="label comment">
+							<label>Slide Width</label>
+                            <comment>Default: 260 (px). The width of each slide.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_width>
+						<slide_margin translate="label comment">
+							<label>Slide Margin</label>
+                            <comment>Default: 10 (px). Margin between each slide.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_margin>
+						<slide_auto translate="label comment">
+                            <label>Slide Auto</label>
+							<comment>Default: Yes. Slides will automatically transition.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_auto>
+						<slide_pause translate="label comment">
+                            <label>Slide Pause</label>
+							<comment>Default: 4000 (ms). The amount of time (in ms) between each auto transition.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_pause>
+						<slide_autohover translate="label comment">
+                            <label>Slide Auto Hover</label>
+							<comment>Default: Yes. Auto show will pause when mouse hovers over slider.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_autohover>
+						<slide_speed translate="label comment">
+                            <label>Slide Speed</label>
+							<comment>Default: 500 (ms). Slide transition duration (in ms).</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_speed>
+						<slide_autocontrols translate="label comment">
+                            <label>Slide Auto Controls</label>
+							<comment>Default: Yes. If true, "Start" / "Stop" controls will be added.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </slide_autocontrols>
+						
+                    </fields>
+					
+				</vertical_carousels_setting>
+            </groups>
+        </isfeatured>	
+    </sections>
+</config>
