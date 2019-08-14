@@ -3,7 +3,8 @@
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
-    "description": "Featured Products version 1.0.3",
+    "description": "Featured Products version 1.0.4
+* Fixed bugs",
     "authors": [
     {
         "name": "MageHit",

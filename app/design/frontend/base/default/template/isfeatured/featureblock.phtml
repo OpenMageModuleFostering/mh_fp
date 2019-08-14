@@ -4,7 +4,14 @@
  */
 ?>
 <?php
-$products = $this->ftotalProduct();
+$products = Mage::getModel('catalog/product')->getCollection();
+$products->addAttributeToSelect('*');
+$products->addAttributeToFilter('status', 1);
+$products->addAttributeToSelect('is_featured');
+$products->addFieldToFilter(array(
+			array('attribute' => 'is_featured', 'eq' => true),
+		));
+//var_dump($products->getData());die;
 $prodIds = $products->getAllIds();
 $ftotalproduct = count($prodIds);
 $_item = $this->getStoreconfig();
