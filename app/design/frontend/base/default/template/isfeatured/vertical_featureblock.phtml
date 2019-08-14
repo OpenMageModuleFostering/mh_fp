@@ -9,19 +9,19 @@ $prodIds = $products->getAllIds();
 $ftotalproduct = count($prodIds);
 $_item = $this->getStoreconfig();
 $enable = $_item['enabled'];
-$title = $_item['horizontal_carousels_setting_title'];
-$limit = $_item['horizontal_carousels_setting_limit'];
-$slide_itemsonpage = $_item['horizontal_carousels_setting_slide_itemsonpage'];
-$slide_auto = $_item['horizontal_carousels_setting_slide_auto'];
+$title = $_item['vertical_carousels_setting_title'];
+$limit = $_item['vertical_carousels_setting_limit'];
+$slide_itemsonpage = $_item['vertical_carousels_setting_slide_itemsonpage'];
+$slide_auto = $_item['vertical_carousels_setting_slide_auto'];
 	if($slide_auto == 1) $slide_auto = 'true'; else $slide_auto = 'false';
-$slide_navigation = $_item['horizontal_carousels_setting_slide_navigation'];
+$slide_navigation = $_item['vertical_carousels_setting_slide_navigation'];
 	if($slide_navigation == 1) $slide_navigation = 'true'; else $slide_navigation = 'false';
 
 ?>
 <?php if ($enable): ?>
     <div class="featured">
         <div class="fhead">
-            <h2 class="subtitle"><?php echo $this->__($title); ?></h2>
+            <h2 class="subtitle ver_subtitle"><?php echo $this->__($title); ?></h2>
         </div>
         <?php if ($ftotalproduct): ?>
             <div id="owl-featuredproducts" class="owl-carousel">
@@ -61,7 +61,7 @@ $slide_navigation = $_item['horizontal_carousels_setting_slide_navigation'];
 	var $fp = jQuery.noConflict();
     $fp(document).ready(function() {
       $fp("#owl-featuredproducts").owlCarousel({
-        items : <?php echo $slide_itemsonpage ?>,
+        items : 1,
         lazyLoad : true,
 		autoPlay : <?php echo $slide_auto ?>,
         navigation : <?php echo $slide_navigation ?>
@@ -69,6 +69,3 @@ $slide_navigation = $_item['horizontal_carousels_setting_slide_navigation'];
      
     });
 </script>
-
-
-

@@ -92,29 +92,16 @@
 			<horizontal_carousels_setting>
 				<title>Featured Products</title>
 				<product_no>20</product_no>
-				<slide_minslides>1</slide_minslides>
-				<slide_maxslides>5</slide_maxslides>
-				<slide_width>260</slide_width>
-				<slide_margin>10</slide_margin>
+				<slide_itemsonpage>4</slide_itemsonpage>
 				<slide_auto>1</slide_auto>
-				<slide_pause>4000</slide_pause>
-				<slide_autohover>1</slide_autohover>
-				<slide_speed>500</slide_speed>
-				<slide_autocontrols>1</slide_autocontrols>
-				
+				<slide_navigation>1</slide_navigation>
 			</horizontal_carousels_setting>
 			<vertical_carousels_setting>
 				<title>Featured Products</title>
 				<product_no>10</product_no>
-				<slide_minslides>1</slide_minslides>
-				<slide_maxslides>5</slide_maxslides>
-				<slide_width>260</slide_width>
-				<slide_margin>10</slide_margin>
+				<slide_itemsonpage>1</slide_itemsonpage>
 				<slide_auto>1</slide_auto>
-				<slide_pause>4000</slide_pause>
-				<slide_autohover>1</slide_autohover>
-				<slide_speed>500</slide_speed>
-				<slide_autocontrols>1</slide_autocontrols>
+				<slide_navigation>1</slide_navigation>
 			</vertical_carousels_setting>
         </isfeatured>
     </default>

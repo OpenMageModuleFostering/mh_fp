@@ -3,11 +3,17 @@
     <default>
         <reference name="head">
             <action method="addCss">
-                <stylesheet>css/featured/jquery.bxslider.css</stylesheet>
+                <stylesheet>css/featured/owl.carousel.css</stylesheet>
+            </action>
+			<action method="addCss">
+                <stylesheet>css/featured/owl.theme.css</stylesheet>
+            </action>
+			<action method="addCss">
+                <stylesheet>css/featured/owl.transitions.css</stylesheet>
             </action>
         </reference>
         <reference name="head">
-            <action method="addItem" ifconfig="isfeatured/all_settings/jqueryinclude">
+            <action method="addItem" ifconfig="isfeatured/genneral_setting/jqueryinclude">
                 <type>skin_js</type>
                 <name>js/featured/jquery-1.10.2.min.js</name>
                 <params/>
@@ -25,10 +31,13 @@
         <reference name="head">
             <action method="addItem">
                 <type>skin_js</type>
-                <name>js/featured/jquery.bxslider.min.js</name>
+                <name>js/featured/owl.carousel.js</name>
                 <params/>
                 <if/>
             </action>
+        </reference>
+		<reference name="right">
+            <block type="isfeatured/isfeatured" name="right.isfeatured" as="right_isfeatured" before="++" template="isfeatured/vertical_featureblock.phtml" />
         </reference>
     </default>
     <!-- <cms_index_index>
