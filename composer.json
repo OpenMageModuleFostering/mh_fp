@@ -1,17 +1,5 @@
 {
-    "name": "OpenMageModuleFostering/mh_fp",
-    "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
-    "homepage": "",
-    "description": "Featured Products version 1.0.6
-* Fixed the problem with Permission > Block on Magento 1.9.2.2",
-    "authors": [
-    {
-        "name": "MageHit",
-        "email": "support@magehit.com"
-    }
-],
-    "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+    "keywords": [
+        "openmage-module"
+    ]
 }
